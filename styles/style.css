@@ -23,7 +23,7 @@
 }
 
 .header__title {
-  margin: o;
+  margin: 0;
   width: 730px;
   padding-left: 64px;
   line-height: 96px;
@@ -33,7 +33,7 @@
 }
 
 .header__subtitle {
-  margin: o;
+  margin: 0;
   position: absolute;
   width: 388px;
   left: 64px;
@@ -45,7 +45,7 @@
 }
 
 .header__link {
-  margin: o;
+  margin: 0;
   color: #2f80ed;
   text-decoration: none;
 }
