@@ -9,6 +9,15 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .header {
   margin: 0;
   padding: 0;
@@ -20,6 +29,7 @@
   display: flex;
   align-items: center;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .header__title {
@@ -48,6 +58,7 @@
   margin: 0;
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity 0.5s ease;
 }
 
 .header__main-illustration {
@@ -68,6 +79,7 @@
   background-color: #2f80ed;
   top: 64px;
   right: 0;
+  animation: rotation 20s linear infinite normal forwards;
 }
 
 .logo {
@@ -305,6 +317,7 @@
   right: 48px;
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity 0.5s ease;
 }
 
 .feynman__img {
@@ -407,6 +420,7 @@
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity 0.5s ease;
 }
 
 .section-title_theme_dark {
@@ -459,6 +473,7 @@
   z-index: 1;
   right: -210px;
   top: 0;
+  animation: rotation 20s linear infinite normal forwards;
 }
 
 .resources {
@@ -483,6 +498,7 @@
 .resources__link {
   padding: 0;
   margin: 0;
+  transition: opacity 0.5s ease;
 }
 
 .resources__logo {
@@ -551,6 +567,7 @@
   font-weight: normal;
   text-decoration: none;
   color: #fff;
+  transition: opacity 0.5s ease;
 }
 
 .footer__social-icon {
@@ -561,13 +578,21 @@
 /* Добавление интерактивности ссылкам */
 
 .header__link:hover {
-  text-decoration: underline;
+  opacity: 50%;
 }
 
 .feynman__link:hover {
-  text-decoration: underline;
+  opacity: 50%;
+}
+
+.khan__buy-link:hover {
+  opacity: 50%;
 }
 
 .footer__column-link:hover {
-  text-decoration: underline;
+  opacity: 50%;
+}
+
+.resources__link:hover {
+  opacity: 50%;
 }
