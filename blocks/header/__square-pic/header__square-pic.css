@@ -6,7 +6,3 @@
   top: 64px;
   right: 0;
 }
-
-.rotation {
-  animation: rotation 20s linear infinite normal forwards;
-}
